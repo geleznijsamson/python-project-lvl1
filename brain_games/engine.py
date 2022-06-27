@@ -1,11 +1,11 @@
-from brain_games import greet
+from brain_games import greeting
 
 
-def structure(calculation, head):
-    user_name = greet.greeting(head)
+def play_game(calculate, head):
+    user_name = greeting.greet(head)
     i = 0
     while i < 3:
-        correct_answer = calculation()
+        correct_answer = calculate()
         answer = input('Your answer: ')
         i += 1
         if answer == correct_answer:

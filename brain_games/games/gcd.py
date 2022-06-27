@@ -3,9 +3,9 @@ from math import gcd
 head = 'Find the greatest common divisor of given numbers.'
 
 
-def calculation():
-    a = randint(1, 100)
-    b = randint(1, 100)
-    question = str(a) + ' ' + str(b)
+def calculate():
+    number_1 = randint(1, 100)
+    number_2 = randint(1, 100)
+    question = str(number_1) + ' ' + str(number_2)
     print(f'Question: {question}')
-    return str(gcd(a, b))
+    return str(gcd(number_1, number_2))
