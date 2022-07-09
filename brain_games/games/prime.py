@@ -1,15 +1,12 @@
 from random import randint
-head = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+manual = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def calculate():
+def get_question_and_answer():
     question = randint(1, 100)
-    print(f'Question: {question}')
     count = 0
-    for i in range(2, question // 2+1):
+    for i in range(2, question // 2 + 1):
         if question % i == 0:
             count += 1
-    if count <= 0:
-        return 'yes'
-    else:
-        return 'no'
+    answer = 'yes' if count <= 0 else 'no'
+    return question, answer

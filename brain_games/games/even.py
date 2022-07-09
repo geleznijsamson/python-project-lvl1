@@ -1,11 +1,8 @@
 from random import randint
-head = 'Answer "yes" if the number is even, otherwise answer "no".'
+manual = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def calculate():
+def get_question_and_answer():
     question = randint(1, 100)
-    print(f'Question: {question}')
-    if question % 2 == 0:
-        return 'yes'
-    else:
-        return 'no'
+    answer = 'no' if question % 2 else 'yes'
+    return question, answer

@@ -1,11 +1,7 @@
-from brain_games import engine
-from brain_games.games.even import calculate
-from brain_games.games.even import head
+from brain_games.engine import play_game
+from brain_games.games.even import get_question_and_answer
+from brain_games.games.even import manual
 
 
 def main():
-    engine.play_game(calculate, head)
-
-
-if __name__ == '__main__':
-    main()
+    play_game(get_question_and_answer, manual)

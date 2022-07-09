@@ -1,11 +1,7 @@
 from brain_games import engine
-from brain_games.games.progression import calculate
-from brain_games.games.progression import head
+from brain_games.games.progression import get_question_and_answer
+from brain_games.games.progression import manual
 
 
 def main():
-    engine.play_game(calculate, head)
-
-
-if __name__ == '__main__':
-    main()
+    engine.play_game(get_question_and_answer, manual)

@@ -1,17 +1,18 @@
 import random
-head = 'What is the result of the expression?'
+import operator
+manual = 'What is the result of the expression?'
 
 
-def calculate():
-    signs = ['+', '-', '*']
-    number_1 = str(random.randint(1, 100))
-    sign = random.choice(signs)
-    number_2 = str(random.randint(1, 100))
-    question = number_1 + sign + number_2
-    print(f'Question: {question}')
-    if sign == '+':
-        return str(int(number_1) + int(number_2))
-    elif sign == '-':
-        return str(int(number_1) - int(number_2))
-    else:
-        return str(int(number_1) * int(number_2))
+def get_question_and_answer():
+    number_1 = random.randint(1, 100)
+    number_2 = random.randint(1, 100)
+    signs = {
+        '+': operator.add,
+        '-': operator.sub,
+        '*': operator.mul,
+    }
+
+    sign = random.choice(list(signs.keys()))
+    question = str(number_1) + ' ' + str(sign) + ' ' + str(number_2)
+    answer = str(signs[sign](number_1, number_2))
+    return question, answer

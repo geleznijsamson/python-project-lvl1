@@ -1,5 +1,5 @@
 import random
-head = 'What number is missing in the progression?'
+manual = 'What number is missing in the progression?'
 
 
 def create_a_list():
@@ -10,10 +10,11 @@ def create_a_list():
     return progression
 
 
-def calculate():
+def get_question_and_answer():
     progression = create_a_list()
-    index = random.choice(progression)
-    string = str(progression).strip()[1:-1].replace(',', '')
-    question = string.replace(str(index), '..')
-    print(f"Question: {question}")
-    return str(index)
+    index = random.randint(0, len(progression) - 1)
+    answer = progression[index]
+    new_index = '..'
+    progression[index] = new_index
+    question = str(progression).strip('[]').replace(',', '').replace("'", "")
+    return question, str(answer)
