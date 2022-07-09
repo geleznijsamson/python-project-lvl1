@@ -1,8 +1,12 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Choose a game and follow the instructions. To win, you need to give 3 correct answers.In case of an incorrect answer, the game ends in defeat."
+description = "Question - answer game."
 authors = ["Dmitrij Sergeev <geleznijsamson@gmail.com>"]
+repository = "https://github.com/geleznijsamson/python-project-lvl1.git"
+classifiers = [
+  "Programming Language :: Python :: 3.10"
+]
 packages = [
   { include = "brain_games" },
 ]
