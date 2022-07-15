@@ -1,20 +1,14 @@
-import random
-manual = 'What number is missing in the progression?'
-
-
-def create_a_list():
-    number = random.randint(1, 50)
-    interval = random.randint(1, 5)
-    stop = number + interval * 10
-    progression = list(range(number, stop, interval))
-    return progression
+from random import randint
+MANUAL = 'What number is missing in the progression?'
 
 
 def get_question_and_answer():
-    progression = create_a_list()
-    index = random.randint(0, len(progression) - 1)
-    answer = progression[index]
-    new_index = '..'
-    progression[index] = new_index
-    question = str(progression).strip('[]').replace(',', '').replace("'", "")
-    return question, str(answer)
+    first_number = randint(1, 50)
+    interval = randint(1, 5)
+    stop = first_number + interval * 10
+    progression = list(range(first_number, stop, interval))
+    index = randint(0, len(progression) - 1)
+    answer = str(progression[index])
+    progression[index] = '..'
+    question = ' '.join(map(str, progression))
+    return question, answer

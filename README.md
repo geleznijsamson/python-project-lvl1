@@ -22,8 +22,28 @@ python3 -m pip install dist/*.whl
 ```
 
 ### Game variants
+
+``
+brain-even
+``
 [![asciicast](https://asciinema.org/a/Uo1SeXzOeartFP3KjDFzDXHyv.svg)](https://asciinema.org/a/Uo1SeXzOeartFP3KjDFzDXHyv)
+
+``
+brain-calc
+``
 [![asciicast](https://asciinema.org/a/xbXWYVtlrFN0Zycf9uQuHZxxO.svg)](https://asciinema.org/a/xbXWYVtlrFN0Zycf9uQuHZxxO)
+
+``
+brain-gcd
+``
 [![asciicast](https://asciinema.org/a/mQLnnNRJvzuOaEEmsSxcnGAqX.svg)](https://asciinema.org/a/mQLnnNRJvzuOaEEmsSxcnGAqX)
+
+``
+brain-progression
+``
 [![asciicast](https://asciinema.org/a/VITCQd03huknal3ev00IvXVV1.svg)](https://asciinema.org/a/VITCQd03huknal3ev00IvXVV1)
+
+``
+brain-prime
+``
 [![asciicast](https://asciinema.org/a/G8DaNbRfZKOx1SOBvFlM8GBvQ.svg)](https://asciinema.org/a/G8DaNbRfZKOx1SOBvFlM8GBvQ)
