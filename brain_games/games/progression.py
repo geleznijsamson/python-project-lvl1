@@ -12,6 +12,6 @@ def get_question_and_answer():
     progression = list(range(first_number, stop, interval))
     index_to_change = randint(0, progression_length - 1)
     answer = str(progression[index_to_change])
-    progression[index_to_change] = '..'
-    question = ' '.join(map(str, progression))
+    question = ' '.join(map(str, progression)).replace(answer, '..')
     return question, answer
+
