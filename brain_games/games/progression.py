@@ -14,4 +14,3 @@ def get_question_and_answer():
     answer = str(progression[index_to_change])
     question = ' '.join(map(str, progression)).replace(answer, '..')
     return question, answer
-
