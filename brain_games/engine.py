@@ -1,15 +1,10 @@
 from prompt import string
 
 
-def greet_and_find_out_the_name():
+def play_game(get_question_and_answer, manual):
     print('Welcome to the Brain Games!')
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
-    return name
-
-
-def play_game(get_question_and_answer, manual):
-    user_name = greet_and_find_out_the_name()
     print(manual)
     number_of_rounds = 3
     for i in range(number_of_rounds):
@@ -20,7 +15,7 @@ def play_game(get_question_and_answer, manual):
             print(f""
                   f"'{user_answer}' is wrong answer ;(."
                   f" Correct answer was '{answer}'.\n"
-                  f"Let's try again, {user_name}!")
+                  f"Let's try again, {name}!")
             return
         print('Correct!')
-    print(f'Congratulations, {user_name}!')
+    print(f'Congratulations, {name}!')
