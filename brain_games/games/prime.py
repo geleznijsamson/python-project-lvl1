@@ -1,4 +1,6 @@
 from random import randint
+
+
 MANUAL = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 

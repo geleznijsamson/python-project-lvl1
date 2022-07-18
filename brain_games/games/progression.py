@@ -1,4 +1,6 @@
 from random import randint
+
+
 MANUAL = 'What number is missing in the progression?'
 
 

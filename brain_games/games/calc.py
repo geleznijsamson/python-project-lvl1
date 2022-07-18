@@ -1,5 +1,7 @@
 import random
 import operator
+
+
 MANUAL = 'What is the result of the expression?'
 
 

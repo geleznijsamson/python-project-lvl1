@@ -1,4 +1,6 @@
 from random import randint
+
+
 MANUAL = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
