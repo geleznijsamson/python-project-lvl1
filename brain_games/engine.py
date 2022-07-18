@@ -12,8 +12,7 @@ def play_game(get_question_and_answer, manual):
         print(f'Question: {question}')
         user_answer = input('Your answer: ')
         if user_answer != answer:
-            print(f""
-                  f"'{user_answer}' is wrong answer ;(."
+            print(f"'{user_answer}' is wrong answer ;(."
                   f" Correct answer was '{answer}'.\n"
                   f"Let's try again, {name}!")
             return
